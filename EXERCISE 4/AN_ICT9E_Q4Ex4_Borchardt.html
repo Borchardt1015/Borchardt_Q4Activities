@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Exercise 4</title>
+	<link rel="stylesheet" type="text/css" href="Q4Exercise4_Borchardt_Mateo.css">
+</head>
+<body>
+	<h2>Length Converter</h2>
+	<p>Inches to Centimeters</p>
+
+	<form>
+		Enter Inches : <input type="text" id="num1"><br>
+		<button type="submit" onclick="Compute()">Calculate</button>
+	</form>
+
+	<script type="text/javascript">
+		function Compute(){
+			let num1 = document.getElementById("num1").value;
+			let centimeter = Number(num1 * 2.54);
+
+			window.alert("The Conversion of Inches to Centimeters is " +centimeter);
+		}
+
+	</script>
+	
+</body>
+</html>
