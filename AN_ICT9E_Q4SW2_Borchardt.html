@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Seatwork 2</title>
+	<link rel="stylesheet" type="text/css" href="Q4SW2_Borchardt_Mateo.css">
+</head>
+</head>
+<body>
+	<h1>Conversation of Fahrenheit to Celsius</h1>
+	<p id="DT"></p>
+
+	<script>
+		const D = new Date();
+		document.getElementById('DT').innerHTML = D;
+	</script>
+
+	<form>
+		Enter Fahrenheit : <input type="text" id="num1"><br>
+		<button type="submit" onclick="Compute()">Calculate</button>
+	</form>
+
+	<h2>Table of Contents</h2>
+
+	<p>Absolute Zero Temperature</p>
+	<table border="1" align="center">
+		<tr><td>Celsius: -273.15</td>
+		<tr><td>Fahrenheit: -457.67</td>
+	</table>
+
+	<p>Freezing/melting point of water</p>
+	<table border="1" align="center">
+		<tr><td>Celsius: 0</td>
+		<tr><td>Fahrenheit: 32.0</td>
+	</table>
+
+	<p>Room temperature</p>
+	<table border="1" align="center">
+		<tr><td>Celsius: 21</td>
+		<tr><td>Fahrenheit: 69.8</td>
+	</table>
+
+	<p>Average body temperature</p>
+	<table border="1" align="center">
+		<tr><td>Celsius: 37</td>
+		<tr><td>Fahrenheit: 98.6</td>
+	</table>
+
+	<p>Boiling point of water</p>
+	<table border="1" align="center">
+		<tr><td>Celsius: 100</td>
+		<tr><td>Fahrenheit: 212.0</td>
+	</table>
+
+	<script type="text/javascript">
+		function Compute(){
+			let num1 = document.getElementById("num1").value;
+			let Celsius = Number(num1 - 32);
+			window.alert("The Conversion of Fahrenheit to Celsius is "+Celsius *5/9);
+		}
+
+	</script>
+</body>
+</html>
